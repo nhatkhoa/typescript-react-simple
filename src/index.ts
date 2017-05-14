@@ -13,9 +13,8 @@ function createDOM(className: string) {
 const wrapper = createDOM('kaira-box')
 
 function onRenderError(error: Error): void {
-  console.error(error.stack)
   const RedBox = require('redbox-react').default
-  ReactDOM.render(<RedBox error={error}/>, wrapper)
+  ReactDOM.render(<RedBox error={error} /> , wrapper)
 }
 
 /**
@@ -25,7 +24,7 @@ async function renderApp(): Promise<HTMLElement> {
   const createMobxStores = require('./stores/index.ts').default
   const stores = createMobxStores()
   const App = require('./App').default  
-  ReactDOM.render(<App stores={stores} />, wrapper)
+  ReactDOM.render(<App stores={stores} /> , wrapper)
   return wrapper
 }
 

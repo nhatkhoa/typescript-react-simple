@@ -20,11 +20,11 @@ const envDefine = new webpack.ProvidePlugin({
 
 const entryWithHRM = [
   'react-hot-loader/patch',
-  './src/index.tsx'
+  './src/index.ts'
 ]
 
 const entryOnProduction = [
-  './src/index.tsx'
+  './src/index.ts'
 ]
 
 const cleanPlugin = new Cleaner(['dist', 'build'], {

@@ -1,0 +1,8 @@
+{
+  "presets": [["env",{
+      "modules": false,
+      "target": {
+          "browsers": "latest"
+      }
+  }],"es2015"]
+}
